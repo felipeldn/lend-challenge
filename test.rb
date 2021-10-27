@@ -1,6 +1,6 @@
 sentence = 'he is a good programmer, he won 865 competitions, but sometimes he dont. What do you think? All test-cases should pass. Done-done?'
 
-def how_many(sentence)
+def howMany(sentence)
     
     # DOUBLE-BARRELED WORDS ALREADY COUNT AS 1
     # Split string
@@ -9,12 +9,12 @@ def how_many(sentence)
     # Iterate through array/variable
     # Inside iteration method, set up conditions so numbers are not counted
     
-    output = sentence.split.count
+    output = sentence.split
     puts output
 
 end
 
-how_many(sentence)
+howMany(sentence)
 
 # return an integer detailing the amount of words in the sentence
 # Example = 'How many eggs are in a half-dozen, 13?' should yield the result 7, numbers do not count and hyphened words count as one
