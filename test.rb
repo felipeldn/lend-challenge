@@ -9,7 +9,7 @@ def howMany(sentence)
     # Store split string in variable/array - DONE
     # Set up empty 'count' variable - DONE
     # Iterate through array/variable - DONE
-    # Inside iteration method, set up conditions so numbers - DONE
+    # Inside iteration method, set up conditions so numbers are not counted - DONE
     # Inside iteration method, set up conditions so special characters are not counted
 
     if sentence.is_a? String
@@ -25,13 +25,8 @@ def howMany(sentence)
             end
         }   
 
-        # if word.include?(0..10)
-        #     count = count
-        # else
-        #     count += 1 
-        # end
-    
         puts count
+    
     else
         puts "Please enter a valid string" 
     end
@@ -42,10 +37,5 @@ howMany(sentence)
 
 # return an integer detailing the amount of words in the sentence
 # Example = 'How many eggs are in a half-dozen, 13?' should yield the result 7, numbers do not count and hyphened words count as one
-
-# Conditions:
-# If invalid parameter is passed, a message should delivered to enter a valid string as an argument 
-# Numbers should not increment the count
-# If a word is hyphened it should count as 1
 
     
