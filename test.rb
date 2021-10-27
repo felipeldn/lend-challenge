@@ -17,15 +17,17 @@ def howMany(sentence)
         output = sentence.split.sort
         count = 0
 
+        test_output = []
+
         output.each {|word| 
-            if word !~ /\D/ 
-                count = count
+            if word !~ /\D/ || word !~ /[!@#$%^&*()_+{}\[\]:;'"\/\\?><.,]/
+                test_output
             else
-                count += 1
+                test_output.push(word)
             end
         }   
 
-        puts count
+        puts test_output
     
     else
         puts "Please enter a valid string" 
