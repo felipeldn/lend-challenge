@@ -16,8 +16,12 @@ def howMany(sentence)
         output = sentence.split.sort
         count = 0
 
-        iteration = output.each {|word| 
-            word
+        output.each {|word| 
+            if word !~ /\D/ 
+                count = count
+            else
+                count += 1
+            end
         }   
 
         # if word.include?(0..10)
@@ -26,7 +30,7 @@ def howMany(sentence)
         #     count += 1 
         # end
     
-        puts iteration
+        puts count
     else
         puts "Please enter a valid string" 
     end
