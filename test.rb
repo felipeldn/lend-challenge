@@ -20,14 +20,15 @@ def howMany(sentence)
         test_output = []
 
         output.each {|word| 
-            if word !~ /\D/ || word !~ /[!@#$%^&*()_+{}\[\]:;'"\/\\?><.,]/
-                test_output
+        
+            if word !~ /\D/ || word =~ /[!@#$%^&*()_+{}\[\]:;'"\/\\><]/
+                count = count
             else
-                test_output.push(word)
+                count += 1
             end
         }   
 
-        puts test_output
+        puts count
     
     else
         puts "Please enter a valid string" 
