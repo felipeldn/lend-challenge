@@ -1,15 +1,16 @@
-sentence = 'he is a good programmer, he won 865 competitions, but sometimes he dont. What do you think? All test-cases should pass. Done-done?'
+sentence = 'jds dsaf lkdf kdsa fkldsf, adsbf ldka ads? asd bfdal ds bf[l. akf dhj ds 878  dwa WE DE 7475 dsfh ds  RAMU 748 dj.'
 test_sentence = 34
 
 def howMany(sentence)
     
     # DOUBLE-BARRELED WORDS ALREADY COUNT AS 1
-    # If statement in case of invalid argument
-    # Split and sort string
-    # Store split string in variable/array
-    # Set up empty 'count' variable
-    # Iterate through array/variable
-    # Inside iteration method, set up conditions so numbers & special characters are not counted
+    # If statement in case of invalid argument - DONE
+    # Split and sort string - DONE
+    # Store split string in variable/array - DONE
+    # Set up empty 'count' variable - DONE
+    # Iterate through array/variable - DONE
+    # Inside iteration method, set up conditions so numbers - DONE
+    # Inside iteration method, set up conditions so special characters are not counted
 
     if sentence.is_a? String
         
