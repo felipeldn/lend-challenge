@@ -1,34 +1,40 @@
-sentence = 'jds dsaf lkdf kdsa fkldsf, adsbf ldka ads? asd bfdal ds bf[l. akf dhj ds 878  dwa WE DE 7475 dsfh ds  RAMU 748 dj.'
+sentence = 'b? Dl )B 4(V! A. MK, YtG ](f 1m )CNxuNUR {PG?'
 test_sentence = 34
 
 def howMany(sentence)
-    
+
     # DOUBLE-BARRELED WORDS ALREADY COUNT AS 1
-    # If statement in case of invalid argument - DONE
+    # Add if statement in case of invalid argument - DONE
     # Split and sort string - DONE
     # Store split string in variable/array - DONE
     # Set up empty 'count' variable - DONE
     # Iterate through array/variable - DONE
     # Inside iteration method, set up conditions so numbers are not counted - DONE
-    # Inside iteration method, set up conditions so special characters are not counted
+    # Inside iteration method, set up conditions so special characters are not counted - DONE
+    # Inside iteration method, set up conditions so that words with numbers included are not counted - DONE
 
     if sentence.is_a? String
         
-        output = sentence.split.sort
+        output = sentence.split
         count = 0
 
         test_output = []
 
         output.each {|word| 
-        
-            if word !~ /\D/ || word =~ /[!@#$%^&*()_+{}\[\]:;'"\/\\><]/
-                count = count
-            else
+
+            split_word = word.split("")
+
+            if word =~ /\d/ || word =~ /[!@#$%^&*()_+{}\[\]:;'"\/\\><]/
+                count
+            else 
+                test_output.push(word)
                 count += 1
             end
+
         }   
 
-        puts count
+        puts test_output 
+        puts count 
     
     else
         puts "Please enter a valid string" 
@@ -37,6 +43,7 @@ def howMany(sentence)
 end
 
 howMany(sentence)
+# word_is_valid(sentence)
 
 # return an integer detailing the amount of words in the sentence
 # Example = 'How many eggs are in a half-dozen, 13?' should yield the result 7, numbers do not count and hyphened words count as one
