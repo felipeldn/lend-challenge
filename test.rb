@@ -22,7 +22,6 @@ def howMany(sentence)
 
         output.each {|word| 
 
-
             if word =~ /\d/ || word =~ /[!@#$%^&*()_+{}\[\]:;'"\/\\><]/
                 count
             else 
