@@ -43,6 +43,12 @@ def howMany(sentence)
 end
 
 howMany(sentence)
+
+SELECT Department.Name,count(Employee.DEPT_ID) 
+FROM Department LEFT JOIN Employee on Department.ID = Employee.DEPT_ID 
+Group By Department.name 
+Order By count(Employee.ID) DESC, Department.Name ASC
+
 # word_is_valid(sentence)
 
 # return an integer detailing the amount of words in the sentence
