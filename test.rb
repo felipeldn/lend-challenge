@@ -8,7 +8,7 @@ def howMany(sentence)
     # Split and sort string - DONE
     # Store split string in variable/array - DONE
     # Set up empty 'count' variable - DONE
-    # Iterate through array/variable - DONE
+    # Iterate through array - DONE
     # Inside iteration method, set up conditions so numbers are not counted - DONE
     # Inside iteration method, set up conditions so special characters are not counted - DONE
     # Inside iteration method, set up conditions so that words with numbers included are not counted - DONE
