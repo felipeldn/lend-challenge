@@ -22,7 +22,6 @@ def howMany(sentence)
 
         output.each {|word| 
 
-            split_word = word.split("")
 
             if word =~ /\d/ || word =~ /[!@#$%^&*()_+{}\[\]:;'"\/\\><]/
                 count
@@ -44,10 +43,10 @@ end
 
 howMany(sentence)
 
-SELECT Department.Name,count(Employee.DEPT_ID) 
-FROM Department LEFT JOIN Employee on Department.ID = Employee.DEPT_ID 
-Group By Department.name 
-Order By count(Employee.ID) DESC, Department.Name ASC
+# SELECT Department.Name,count(Employee.DEPT_ID) 
+# FROM Department LEFT JOIN Employee on Department.ID = Employee.DEPT_ID 
+# Group By Department.name 
+# Order By count(Employee.ID) DESC, Department.Name ASC
 
 # word_is_valid(sentence)
 
