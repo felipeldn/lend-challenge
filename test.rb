@@ -47,9 +47,4 @@ howMany(sentence)
 # Group By Department.name 
 # Order By count(Employee.ID) DESC, Department.Name ASC
 
-# word_is_valid(sentence)
-
-# return an integer detailing the amount of words in the sentence
-# Example = 'How many eggs are in a half-dozen, 13?' should yield the result 7, numbers do not count and hyphened words count as one
-
     
