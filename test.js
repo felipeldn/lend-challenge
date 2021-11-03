@@ -15,7 +15,7 @@ function how_Many(sentence) {
             let hasNumber = /\d/
             let hasSpecialCharacter = /[!@#$%^&*()_+{}\[\]:;'"\/\\><]/
 
-            if (hasNumber.test(word) === true || hasSpecialCharacter.test(word) === true) {
+            if (hasNumber.test(word) || hasSpecialCharacter.test(word)) {
                 count
             } else {
                 test_output.push(word)
@@ -24,7 +24,7 @@ function how_Many(sentence) {
         })
 
         let output = test_output.join(' ')
-        
+
         console.log(output)
         console.log(count)
 
