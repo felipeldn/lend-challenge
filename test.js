@@ -5,12 +5,12 @@ function how_Many(sentence) {
 
     if (typeof sentence === 'string') {
         
-        let output = sentence.split(' ')
+        let strArray = sentence.split(' ')
         let count = 0
 
         let test_output = []
 
-        output.forEach(function(word) {
+        strArray.forEach(function(word) {
 
             let hasNumber = /\d/
             let hasSpecialCharacter = /[!@#$%^&*()_+{}\[\]:;'"\/\\><]/
@@ -23,6 +23,8 @@ function how_Many(sentence) {
             }
         })
 
+        let output = test_output.join(' ')
+        console.log(output)
         console.log(count)
 
     } else {
