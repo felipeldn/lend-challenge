@@ -21,7 +21,6 @@ function how_Many(sentence) {
                 test_output.push(word)
                 count += 1
             }
-            // console.log(test_output)
         })
 
         console.log(count)
