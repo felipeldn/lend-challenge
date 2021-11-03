@@ -5,7 +5,7 @@ function how_Many(sentence) {
 
     if (typeof sentence === 'string') {
         
-        let strArray = sentence.split(' ')
+        const strArray = sentence.split(' ')
         let count = 0
 
         let test_output = []
