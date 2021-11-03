@@ -5,7 +5,7 @@ function how_Many(sentence) {
 
     if (typeof sentence === 'string') {
         
-        let output = sentence.split()
+        let output = sentence.split(' ')
         let count = 0
 
         let test_output = []
@@ -15,15 +15,16 @@ function how_Many(sentence) {
             let hasNumber = /\d/
             let hasSpecialCharacter = /[!@#$%^&*()_+{}\[\]:;'"\/\\><]/
 
-            if (hasNumber.test(word) ===! true ) {
+            if (hasNumber.test(word) === true || hasSpecialCharacter.test(word) === true) {
                 count
             } else {
                 test_output.push(word)
                 count += 1
             }
-            console.log(test_output)
-            console.log(count)
+            // console.log(test_output)
         })
+
+        console.log(count)
 
     } else {
         console.log('Please enter a valid a string')
