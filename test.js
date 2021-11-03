@@ -24,6 +24,7 @@ function how_Many(sentence) {
         })
 
         let output = test_output.join(' ')
+        
         console.log(output)
         console.log(count)
 
