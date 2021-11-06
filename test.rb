@@ -1,4 +1,4 @@
-sentence = ''
+sentence = 'b? Dl )B 4(V! A. MK, YtG ](f 1m )CNxuNUR {PG?'
 test_sentence = 34
 
 def howMany(sentence)
